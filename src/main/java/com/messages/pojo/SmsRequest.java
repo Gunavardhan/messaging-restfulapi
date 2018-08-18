@@ -30,7 +30,7 @@ public class SmsRequest {
 		account.setUser("Gunavardhan");
 		account.setPassword("9949026410");
 		account.setSenderid("TESTIN");
-		account.setChannel("1");
+		account.setChannel("2");
 		account.setDcs("0");
 		return account;
 	}

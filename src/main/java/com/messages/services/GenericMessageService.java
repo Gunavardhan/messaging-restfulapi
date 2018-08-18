@@ -37,7 +37,7 @@ public class GenericMessageService {
 		HttpEntity entity = new HttpEntity(jsonReqObj, headers);
 		String URL = "https://www.smsgatewayhub.com/api/mt/SendSMS";
 		ResponseEntity<String> response = template.exchange(URL, HttpMethod.POST, entity, String.class);
-		return Response.status(200).entity(response.getStatusCodeValue()).build();
+		return Response.status(200).entity(response.getBody()).build();
 	}
 	
 	public static void main(String[] args) {
